@@ -23,7 +23,7 @@ const getResults = (fileInfo) => {
     let streetObj = {};
 
     const cars = fileInfo.slice(-Number(carNumbers));
-    // console.log(cars);
+    console.log(cars);
 
     const streetsData = {};
 
@@ -41,10 +41,10 @@ const getResults = (fileInfo) => {
 
     let resMas = {};
 
-    // function randomInteger(min, max) {
-    //     let rand = min - 0.5 + Math.random() * (max - min + 1);
-    //     return Math.round(rand);
-    // }
+    function randomInteger(min, max) {
+        let rand = min - 0.5 + Math.random() * (max - min + 1);
+        return Math.round(rand);
+    }
 
     for (let key in streetObj) {
         if (streetObj.hasOwnProperty(key)) {
